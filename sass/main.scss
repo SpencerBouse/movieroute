@@ -1,0 +1,70 @@
+$maincolor: #003C71;
+$twocolor: #0071C5;
+$threecolor: #598AA3;
+$fourcolor: #84AEAD;
+$fivecolor: #E2EDD7;
+
+body{
+  background-color: $threecolor;
+}
+header{
+  background-color: $maincolor;
+  border-bottom: 20px solid $twocolor;
+  h1{
+    display: inline-block;
+    color: #DCDCDC;
+  }
+  img{
+    width: 90px;
+    height: 90px;
+    filter: invert(100%);
+  }
+  ul{
+    color: #DCDCDC;
+    float: right;
+    margin-top: 20px;
+    li{
+      margin-right: 20px;
+      font-size: 20px;
+      margin-bottom: 20px;
+      list-style-type: none;
+    }
+  }
+  form{
+    margin-left: 50px;
+    margin-bottom: 10px;
+    input,button{
+      border: none;
+      border-radius: 3px;
+      background-color: #DCDCDC;
+      color: $maincolor;
+    }
+  }
+}
+.featMovie{
+  border: 4px solid $maincolor;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: $fourcolor;
+  h2{
+    text-align: left;
+    color: $maincolor;
+  }
+  hr{
+    color: $maincolor;
+  }
+  img{
+    border: 4px solid $maincolor;
+    margin-bottom: 10px;
+  }
+}
+footer{
+  border-top: 20px solid $twocolor;
+  background-color: $maincolor;
+  height: 60px;
+  h5{
+    color: #DCDCDC;
+    margin-left: 10px;
+  }
+}
