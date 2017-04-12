@@ -2,10 +2,10 @@
     'use strict';
 
     angular
-        .module('taco')
+        .module('routing')
         .controller('mainController', function(API) {
         	const vm = this;
-
+          vm.data= API.getData();
         });
 
 })();

@@ -6,6 +6,10 @@ $fivecolor: #E2EDD7;
 
 body{
   background-color: $threecolor;
+  a{
+    text-decoration: none;
+    color: #DCDCDC;
+  }
 }
 header{
   background-color: $maincolor;
@@ -26,8 +30,9 @@ header{
     li{
       margin-right: 20px;
       font-size: 20px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       list-style-type: none;
+
     }
   }
   form{
@@ -67,4 +72,32 @@ footer{
     color: #DCDCDC;
     margin-left: 10px;
   }
+}
+.movies{
+  a{
+    text-decoration: none;
+    color: #DCDCDC;
+    h4{
+      height: 2em;
+    }
+  }
+}
+#genreCont{
+  text-align: center;
+  div{
+    h2{
+      background-color: $twocolor;
+      border-radius: 5px;
+      border: 5px solid $maincolor;
+      padding: 5px;
+    }
+  }
+}
+weather{
+  color: #DCDCDC;
+  background-color: $maincolor;
+  font-size: 20px;
+  padding: 5px;
+  border: 2px solid $twocolor;
+  text-transform: capitalize;
 }

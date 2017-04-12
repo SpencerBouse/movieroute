@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-    .module('taco', ['ui.router'])
+    .module('routing', ['ui.router'])
     .config(function($stateProvider, $urlRouterProvider,$locationProvider){
 
       $urlRouterProvider.otherwise('home');
@@ -19,7 +19,7 @@
 		   }
 	    })
 	    .state('allItems', {
-	      url: '/blogs/:id',
+	      url: '/allItems/:id',
 	      views: {
 		      'content': {
 		        templateUrl: '../partials/allItems.html',
@@ -28,16 +28,16 @@
 		      }
 		   }
 	    })
-	    // .state('blogs', {
-	    //   url: '/blogs',
-	    //   views: {
-		  //     'content': {
-		  //       templateUrl: '../partials/blogs.html',
-		  //       controller: 'BlogController',
-		  //       controllerAs: 'vm'
-		  //     }
-		  //  }
-	    // })
+	    .state('genres', {
+	      url: '/genre',
+	      views: {
+		      'content': {
+		        templateUrl: '../partials/genre.html',
+		        controller: 'mainController',
+		        controllerAs: 'vm'
+		      }
+		   }
+	    })
 	    // .state('login', {
 	    //   url: '/login',
 	    //   views: {
